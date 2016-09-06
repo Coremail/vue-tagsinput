@@ -22,7 +22,7 @@ new Vue({
             return {id: this.id, text}
         },
         renderTag(item) {
-            return `**${item.text}**`
+            return item.text
         },
         setRO(item) {
             return item.id === 0

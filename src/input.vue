@@ -22,9 +22,12 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.3);
-    font-size: 0.75rem;
-    padding: 0.1rem 0
+    padding: 5px 0;
+    font-size: 12px;
+    min-height: 33px;
+    max-height: 122px;
+    overflow: auto;
+    border: 1px solid #ebebeb;
 }
 .placeholder {
     display: inline-block;
