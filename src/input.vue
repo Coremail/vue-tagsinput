@@ -22,7 +22,7 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    padding: 5px 0;
+    padding: 0.1rem 0;
     font-size: 12px;
     min-height: 33px;
     max-height: 122px;

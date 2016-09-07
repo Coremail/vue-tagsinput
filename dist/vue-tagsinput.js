@@ -102,7 +102,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.tags-input[_v-777cab07] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    padding: 5px 0;\n    font-size: 12px;\n    min-height: 33px;\n    max-height: 122px;\n    overflow: auto;\n}\n.placeholder[_v-777cab07] {\n    display: inline-block;\n    color: #A9A9A9;\n    line-height: 2em;\n    white-space: nowrap;\n}\n", ""]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.tags-input[_v-777cab07] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    padding: 0.1rem 0;\n    font-size: 12px;\n    min-height: 33px;\n    max-height: 122px;\n    overflow: auto;\n}\n.placeholder[_v-777cab07] {\n    display: inline-block;\n    color: #A9A9A9;\n    line-height: 2em;\n    white-space: nowrap;\n}\n", ""]);
 	
 	// exports
 
@@ -432,7 +432,7 @@
 	//     flex-direction: row;
 	//     align-items: center;
 	//     flex-wrap: wrap;
-	//     padding: 5px 0;
+	//     padding: 0.1rem 0;
 	//     font-size: 12px;
 	//     min-height: 33px;
 	//     max-height: 122px;
