@@ -83,8 +83,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2a0762c6&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./input.vue", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2a0762c6&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./input.vue");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-777cab07&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./input.vue", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-777cab07&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./input.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -102,7 +102,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.tags-input[_v-2a0762c6] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.3);\n    font-size: 0.75rem;\n    padding: 0.1rem 0\n}\n.placeholder[_v-2a0762c6] {\n    display: inline-block;\n    color: #A9A9A9;\n    line-height: 2em;\n    white-space: nowrap;\n}\n", ""]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.tags-input[_v-777cab07] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    padding: 5px 0;\n    font-size: 12px;\n    min-height: 33px;\n    max-height: 122px;\n    overflow: auto;\n    border: 1px solid #ebebeb;\n}\n.placeholder[_v-777cab07] {\n    display: inline-block;\n    color: #A9A9A9;\n    line-height: 2em;\n    white-space: nowrap;\n}\n", ""]);
 	
 	// exports
 
@@ -432,9 +432,12 @@
 	//     flex-direction: row;
 	//     align-items: center;
 	//     flex-wrap: wrap;
-	//     box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.3);
-	//     font-size: 0.75rem;
-	//     padding: 0.1rem 0
+	//     padding: 5px 0;
+	//     font-size: 12px;
+	//     min-height: 33px;
+	//     max-height: 122px;
+	//     overflow: auto;
+	//     border: 1px solid #ebebeb;
 	// }
 	// .placeholder {
 	//     display: inline-block;
@@ -607,8 +610,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-34316b96&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./tag.vue", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-34316b96&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./tag.vue");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-4f2dd017&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./tag.vue", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-4f2dd017&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./tag.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -626,7 +629,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n.tag[_v-34316b96] {\n    border: 1px solid #e0e0e0;\n    border-radius: 3px;\n    color: #858585;\n    font-weight: normal;\n    font-size: 1.1em;\n    padding: 0 0.5ch;\n}\n.tag[invalid][_v-34316b96] {\n    border: 1px solid red;\n}\n.remove[_v-34316b96] {\n    cursor: pointer;\n}\n.remove[_v-34316b96]::after{\n    color: rgba(0, 0, 0, 0.6);\n    content: \"\\2A2F\";\n    padding-left: 1px;\n}\n.hl-click[_v-34316b96]:hover:active {\n    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n}\n", ""]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n.tag[_v-4f2dd017] {\n    color: #212121;\n    height: 25px;\n    line-height: 25px;\n    background: #f2f2f2;\n    border-radius:12px;\n    padding: 0 10px;\n    border: 0;\n    font-size: 12px;\n    margin: 3px 0;\n    position: relative;\n}\n.tag[invalid][_v-4f2dd017] {\n    color: #ff7043;\n}\n.tag:hover .remove[_v-4f2dd017]{\n    display: block;\n}\n.remove[_v-4f2dd017] {\n    cursor: pointer;\n    background-image: -webkit-linear-gradient(left, rgba(242,242,242,0.00) 0%, #f2f2f2 50%);\n    background-image: linear-gradient(90deg, rgba(242,242,242,0.00) 0%, #f2f2f2 50%);\n    display: block;\n    width: 30px;\n    height: 100%;\n    position: absolute;\n    right: 0;\n    top: 0;\n    border-top-right-radius: 12px;\n    border-bottom-right-radius: 12px;\n    text-align: right;\n    margin-right: 7px;\n    display: none;\n}\n.remove[_v-4f2dd017]:hover::after{\n    color: #ff7043;\n}\n.remove[_v-4f2dd017]::after{\n    color: #c2c2c2;\n    content: \"\\D7\";\n}\n.hl-click[_v-4f2dd017]:hover:active {\n    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n}\n", ""]);
 	
 	// exports
 
@@ -651,23 +654,44 @@
 	// </template>
 	// <style scoped>
 	// .tag {
-	//     border: 1px solid #e0e0e0;
-	//     border-radius: 3px;
-	//     color: #858585;
-	//     font-weight: normal;
-	//     font-size: 1.1em;
-	//     padding: 0 0.5ch;
+	//     color: #212121;
+	//     height: 25px;
+	//     line-height: 25px;
+	//     background: #f2f2f2;
+	//     border-radius:12px;
+	//     padding: 0 10px;
+	//     border: 0;
+	//     font-size: 12px;
+	//     margin: 3px 0;
+	//     position: relative;
 	// }
 	// .tag[invalid] {
-	//     border: 1px solid red;
+	//     color: #ff7043;
+	// }
+	// .tag:hover .remove{
+	//     display: block;
 	// }
 	// .remove {
 	//     cursor: pointer;
+	//     background-image: linear-gradient(90deg, rgba(242,242,242,0.00) 0%, #f2f2f2 50%);
+	//     display: block;
+	//     width: 30px;
+	//     height: 100%;
+	//     position: absolute;
+	//     right: 0;
+	//     top: 0;
+	//     border-top-right-radius: 12px;
+	//     border-bottom-right-radius: 12px;
+	//     text-align: right;
+	//     margin-right: 7px;
+	//     display: none;
+	// }
+	// .remove:hover::after{
+	//     color: #ff7043;
 	// }
 	// .remove::after{
-	//     color: rgba(0, 0, 0, 0.6);
-	//     content: "\2a2f";
-	//     padding-left: 1px;
+	//     color: #c2c2c2;
+	//     content: "\00D7";
 	// }
 	// .hl-click:hover:active {
 	//     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -699,7 +723,7 @@
 /* 12 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<span :class=\"klass.tag\" :invalid=\"!valid\" _v-34316b96=\"\">\n    {{text}}\n    <span v-if=\"remove\" class=\"remove hl-click\" @click=\"remove\" _v-34316b96=\"\">\n    </span>\n</span>\n";
+	module.exports = "\n<span :class=\"klass.tag\" :invalid=\"!valid\" _v-4f2dd017=\"\">\n    {{text}}\n    <span v-if=\"remove\" class=\"remove hl-click\" @click=\"remove\" _v-4f2dd017=\"\">\n    </span>\n</span>\n";
 
 /***/ },
 /* 13 */
@@ -736,8 +760,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-72f843ab&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./typing.vue", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-72f843ab&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./typing.vue");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-57a7f8ec&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./typing.vue", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-57a7f8ec&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./typing.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -755,7 +779,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\ninput.input[_v-72f843ab] {\n    outline: none;\n    box-shadow: none;\n    border: none;\n    background-color: transparent;\n    font-family: monospace;\n    padding: 0 0.5ch;\n    line-height: 2em;\n}\n.gap[_v-72f843ab] {\n\n}\n", ""]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\ninput.input[_v-57a7f8ec] {\n    outline: none;\n    box-shadow: none;\n    border: none;\n    background-color: transparent;\n    font-family: monospace;\n    padding: 0 0.5ch;\n    line-height: 2em;\n}\n.gap[_v-57a7f8ec] {\n\n}\n", ""]);
 	
 	// exports
 
@@ -914,13 +938,13 @@
 /* 18 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<span :class=\"klass.gap\" @click=\"begin\" _v-72f843ab=\"\">\n    <input type=\"text\" :class=\"klass.input\" :style=\"{width: base + charLen(text) + 'ch'}\" v-el:input=\"\" v-model=\"text\" @mousedown=\"preventNativeActive\" @blur=\"finish(true)\" @keydown=\"keyPress\" _v-72f843ab=\"\">\n        <slot v-if=\"!typing\" _v-72f843ab=\"\"></slot>\n</span>\n";
+	module.exports = "\n<span :class=\"klass.gap\" @click=\"begin\" _v-57a7f8ec=\"\">\n    <input type=\"text\" :class=\"klass.input\" :style=\"{width: base + charLen(text) + 'ch'}\" v-el:input=\"\" v-model=\"text\" @mousedown=\"preventNativeActive\" @blur=\"finish(true)\" @keydown=\"keyPress\" _v-57a7f8ec=\"\">\n        <slot v-if=\"!typing\" _v-57a7f8ec=\"\"></slot>\n</span>\n";
 
 /***/ },
 /* 19 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div :class=\"klass.container\" @mousedown.self.prevent=\"\" @click.self=\"inputLast\" _v-2a0762c6=\"\">\n    <template v-for=\"(index, item) in tags\" :track-by=\"trackBy\">\n        <typing :index=\"index\" _v-2a0762c6=\"\"></typing>\n        <tag :text=\"item | getText\" :remove=\"item | getRemoveHandle index\" :valid=\"item | validate\" _v-2a0762c6=\"\">\n        </tag>\n    </template>\n    <typing :index=\"length\" _v-2a0762c6=\"\">\n        <span v-if=\"placeholder\" :class=\"klass.placeholder\" _v-2a0762c6=\"\">{{placeholder}}</span>\n    </typing>\n</div>\n";
+	module.exports = "\n<div :class=\"klass.container\" @mousedown.self.prevent=\"\" @click.self=\"inputLast\" _v-777cab07=\"\">\n    <template v-for=\"(index, item) in tags\" :track-by=\"trackBy\">\n        <typing :index=\"index\" _v-777cab07=\"\"></typing>\n        <tag :text=\"item | getText\" :remove=\"item | getRemoveHandle index\" :valid=\"item | validate\" _v-777cab07=\"\">\n        </tag>\n    </template>\n    <typing :index=\"length\" _v-777cab07=\"\">\n        <span v-if=\"placeholder\" :class=\"klass.placeholder\" _v-777cab07=\"\">{{placeholder}}</span>\n    </typing>\n</div>\n";
 
 /***/ }
 /******/ ])));
