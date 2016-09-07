@@ -1,5 +1,5 @@
 <template>
-    <span :class="[klass.tag, !valid ? 'invalid' : '']">
+    <span :class="klass.tag" :invalid="!valid">
         {{text}}
         <span v-if="remove"
             class="remove hl-click"
@@ -20,7 +20,7 @@
     margin: 3px 0;
     position: relative;
 }
-.tag.invalid {
+.tag[invalid] {
     color: #ff7043;
 }
 .tag:hover .remove{
