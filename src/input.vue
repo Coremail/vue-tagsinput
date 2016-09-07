@@ -27,7 +27,6 @@
     min-height: 33px;
     max-height: 122px;
     overflow: auto;
-    border: 1px solid #ebebeb;
 }
 .placeholder {
     display: inline-block;
