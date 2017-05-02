@@ -1,28 +1,31 @@
 <template>
-    <span :class="klass.tag" :invalid="!valid">
-        {{text}}
-        <span v-if="remove"
-            class="remove hl-click"
-            @click="remove">
-        </span>
-    </span>
+  <span :class="klass.tag" :invalid="invalid">
+    {{text}}
+    <span
+      v-if="remove"
+      class="hl-click remove"
+      @click="remove"
+    ></span>
+  </span>
 </template>
 <style scoped>
 .tag {
-    color: #212121;
-    height: 25px;
-    line-height: 25px;
-    background: #f2f2f2;
-    border-radius:12px;
-    padding: 0 10px;
-    border: 0;
-    font-size: 12px;
-    margin: 3px 0;
-    position: relative;
+  color: #212121;
+  height: 25px;
+  line-height: 25px;
+  background: #f2f2f2;
+  border-radius: 12px;
+  padding: 0 10px;
+  border: 0;
+  font-size: 12px;
+  margin: 3px 0;
+  position: relative;
 }
+
 .tag[invalid] {
-    color: #ff7043;
+  border: 1px solid red;
 }
+
 .tag:hover .remove{
     display: block;
 }
@@ -48,26 +51,22 @@
     color: #c2c2c2;
     content: "\00D7";
 }
-.hl-click:hover:active {
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
+
 </style>
 <script>
+import {str, bool} from 'vuept'
+
+
 export default {
-    props: {
-        text: {
-            type: String,
-            required: true
-        },
-        remove: {
-            type: Function
-        },
-        valid: {type: Boolean, default: true},
-    },
-    computed: {
-        klass() {
-            return this.$parent.klass
-        }
+  props: {
+    text: str.required,
+    remove: [Function, null],
+    invalid: bool.default(false),
+  },
+  computed: {
+    klass() {
+      return this.$parent.klass
     }
+  }
 }
 </script>
