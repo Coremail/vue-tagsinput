@@ -7,8 +7,8 @@
         :handle-insert="insertTag"
         :handle-remove="removeTag"
         :active-other="activeOther"
-        @click="focus(index)"
-        @blur="blur(index)"
+        @click="focus"
+        @blur="blur"
       >
         <span v-show="index === length && showPlaceholder" :class="klass.placeholder">{{placeholder}}</span>
       </typing>
@@ -69,16 +69,16 @@ export default {
     }
   },
   methods: {
-    focus(index) {
+    focus(index, $input) {
       if (this.typingIndex === -1) {
-        this.$emit('focus', index)
+        this.$emit('focus', index, $input)
       }
       this.typingIndex = index
     },
-    blur(index) {
+    blur(index, $input) {
       // it will be false when caused by keyPress events
       if (index === this.typingIndex) {
-        this.$emit('blur', index)
+        this.$emit('blur', index, $input)
         this.typingIndex = -1
       }
     },

@@ -1,5 +1,5 @@
 <template>
-  <span :class="klass.gap" @click="$emit('click')">
+  <span :class="klass.gap" @click="begin">
     <input type="text"
         :class="klass.input"
         :style="{width: baseWidth + charLen(text) + 'ch'}"
@@ -62,12 +62,15 @@ export default {
     }
   },
   methods: {
+    begin() {
+      this.$emit('click', this.index, this.$refs.input)
+    },
     preventNativeActive(e) {
       if (!this.typing) e.preventDefault()
     },
     finishEditing() {
       this.addTag()
-      this.$emit('blur', this.index)
+      this.$emit('blur', this.index, this.$refs.input)
     },
     addTag() {
       let {trimText} = this
