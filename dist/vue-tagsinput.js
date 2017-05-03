@@ -548,16 +548,16 @@
 	    }
 	  },
 	  methods: {
-	    focus: function focus(index) {
+	    focus: function focus(index, $input) {
 	      if (this.typingIndex === -1) {
-	        this.$emit('focus', index);
+	        this.$emit('focus', index, $input);
 	      }
 	      this.typingIndex = index;
 	    },
-	    blur: function blur(index) {
+	    blur: function blur(index, $input) {
 	      // it will be false when caused by keyPress events
 	      if (index === this.typingIndex) {
-	        this.$emit('blur', index);
+	        this.$emit('blur', index, $input);
 	        this.typingIndex = -1;
 	      }
 	    },
@@ -933,12 +933,15 @@
 	    }
 	  },
 	  methods: {
+	    begin: function begin() {
+	      this.$emit('click', this.index, this.$refs.input);
+	    },
 	    preventNativeActive: function preventNativeActive(e) {
 	      if (!this.typing) e.preventDefault();
 	    },
 	    finishEditing: function finishEditing() {
 	      this.addTag();
-	      this.$emit('blur', this.index);
+	      this.$emit('blur', this.index, this.$refs.input);
 	    },
 	    addTag: function addTag() {
 	      var trimText = this.trimText;
@@ -993,9 +996,7 @@
 	  return _c('span', {
 	    class: _vm.klass.gap,
 	    on: {
-	      "click": function($event) {
-	        _vm.$emit('click')
-	      }
+	      "click": _vm.begin
 	    }
 	  }, [_c('input', {
 	    directives: [{
@@ -1044,12 +1045,8 @@
 	        "active-other": _vm.activeOther
 	      },
 	      on: {
-	        "click": function($event) {
-	          _vm.focus(index)
-	        },
-	        "blur": function($event) {
-	          _vm.blur(index)
-	        }
+	        "click": _vm.focus,
+	        "blur": _vm.blur
 	      }
 	    }, [_c('span', {
 	      directives: [{
