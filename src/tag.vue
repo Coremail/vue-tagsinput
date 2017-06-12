@@ -23,7 +23,11 @@
 }
 
 .tag[invalid] {
-  border: 1px solid red;
+  color: #ff7043;
+}
+
+.tag[invalid] .remove::after{
+  color: #ff7043;
 }
 
 .tag:hover .remove{
